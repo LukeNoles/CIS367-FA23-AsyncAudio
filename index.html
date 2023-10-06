@@ -16,9 +16,33 @@
     <link rel="stylesheet" href="output.css" />
   </head>
   <body>
-    <h1 class="text-8xl font-bold underline">Hello world!</h1>
-
-    <i class="fa-solid fa-play"></i>
+    <h1 class="async font-bold">Async Audio</h1>
+    <div class="song-image">
+      <img src="albumart/BestPart.jpg" id="cover">
+    </div>
+    <div class="player" id="player">
+      <div class="title">
+        <h4 id="name">Best part of Me</h4>
+      </div>
+      <div class="artist">
+        <h4 id="artist-name">Artist</h4>
+      </div>
+      <div class="progress-container">
+        <div class="progress"></div>
+      </div>
+      <audio src="songs/BestPart.mp3" id="audio"></audio>
+      <div class="navigation">
+        <button id="prev" class="action-btn">
+          <i class="fas fa-backward"></i>
+        </button>
+        <button id="play" class="action-btn">
+          <i class="fa-solid fa-play"></i>
+        </button>
+        <button id="next" class="action-btn">
+          <i class="fa-solid fa-forward"></i>
+        </button>
+      </div>
+    </div>
 
     <script src="main.js"></script>
   </body>

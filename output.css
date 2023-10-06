@@ -62,8 +62,58 @@ body {
   /* 1 */
   line-height: inherit;
   /* 2 */
+  background-image: linear-gradient(0deg, rgb(4, 57, 170) 10%, rgb(44, 118, 168) 90%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
 }
 
+.song-image {
+  max-width: 350px;
+  max-height: 350px;
+  margin: 30px;
+}
+
+.song-image img {
+  border-radius: 2%;
+}
+
+.title {
+  font-size: 25px;
+}
+.async {
+  font-size: 50px;
+}
+
+.artist {
+  font-size: 25px;
+  color: rgb(179, 179, 179);
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+}
+
+.action-btn {
+  font-size: 70px;
+  color: white;
+  margin: 20px;
+}
+
+.progress-container {
+  cursor: pointer;
+  height: 6px;
+  margin: 10px 0;
+  width: 100%;
+  background-color: rgba(129, 129, 129, 0.65);
+}
+.progress {
+  background-color: #9ca3af;
+  border-radius: 5px;
+}
 /*
 1. Add the correct height in Firefox.
 2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
